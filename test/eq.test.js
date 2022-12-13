@@ -3,7 +3,7 @@ import eq from "../src/eq.js"
 const expect = chai.expect
 
 describe("Equals", () => {
-    it("adds positive number to positive number", () =>{
+    it("compares two equal strings", () =>{
         expect(eq("abc","abc")).to.equal(true)
     });
    })
