@@ -18,9 +18,13 @@ describe("Equals", () => {
         expect(eq("abc","abc")).to.equal(true)
     });
 
-    it("compares NaN to Nan", () => {
+    it("compares NaN to NaN", () => {
         expect(eq(NaN, NaN)).to.equal(true)
     });
+
+    it("compares object to NaN", () => {
+        expect(eq(object, NaN)).to.equal(false)
+    })
 
    })
 
