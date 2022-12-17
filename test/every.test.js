@@ -17,4 +17,7 @@ describe("Every", () => {
     it('returns true for an array that does not contain falsey elements', () => {
         expect(every([true, 1, 2, 3, 4, 'yes', 'of course', Object('a')], Boolean)).to.equal(true)
     });
+    it('null as an array', () => {
+        expect(every(null, Boolean)).to.equal(true)
+    });
 })
