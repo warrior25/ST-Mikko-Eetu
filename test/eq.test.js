@@ -24,12 +24,8 @@ describe("Equals", () => {
 
     it("compares object to NaN", () => {
         expect(eq(object, NaN)).to.equal(false)
-    })
-
-   })
-
-describe.skip("Equals", () => {
-    it("compares a string with an object made from that string", () => {
+    });
+    it.skip("compares a string with an object made from that string", () => {
         expect(eq('a', Object('a'))).to.equal(false)
     });
 })
