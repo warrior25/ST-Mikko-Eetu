@@ -17,6 +17,14 @@ describe('isEmpty', () => {
     it('shows that empty object is empty', () => {
         expect(isEmpty({})).to.equal(true)
     });
+    it('shows that empty map is empty', () => {
+        const map1 = new Map();
+        expect(isEmpty(map1)).to.equal(true)
+    });
+    it('shows that empty set is empty', () => {
+        const set1 = new Set();
+        expect(isEmpty(set1)).to.equal(true)
+    });
     it('shows that a non-empty array is not empty', () => {
         expect(isEmpty([1,2,3])).to.equal(false)
     });
